@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Coffee Subscription Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Coffee Subscription</h1>
+    <p id="description">This is a survey to know customers' details for their coffee subscription for Cup O' Joe</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name:<input id="name" name="name" type="text" placeholder="Enter Your Name" required/></label>
+        <label for="email" id="email-label">Email:<input id="email" name="email" type="email" placeholder="Enter Your Email" required/></label>
+        <label for="number" id="number-label">Enter Your Age(Optional):<input id="number" name="number" type="number" min="14" max="85" placeholder="Age"/></label>
+        <hr>
+        <label for="dropdown">Select Your Generation:</label>
+        <select id="dropdown" name="generation">
+          <option>Baby Boomer(1943-1964)</option>
+          <option>Generation X(1965-1980)</option>
+          <option>Millennials(1981-1996)</option>
+          <option>Generation Z(1997-2012)</option>
+          <option>Generation Alpha(2013-present)</option>
+        </select>
+        <hr>
+        <label>How Do you rate our coffee?</label>
+        <label for="rating1"><input class="inline" name="g1" value="Poor" id="rating1" type="radio" checked/> Poor</label>
+        <label for="rating2"><input class="inline" name="g1" value="Unsatisfactory" id="rating2" type="radio"/> Unsatisfactory</label>
+        <label for="rating3"><input class="inline" name="g1" value="Satisfactory" id="rating3" type="radio"/> Satisfactory</label>
+        <label for="rating4"><input class="inline" name="g1" value="Good" id="rating4" type="radio"/> Good</label>
+        <label for="rating5"><input class="inline" name="g1" value="Outstanding" id="rating2" type="radio"/> Outstanding</label>
+        <hr>
+        <label>How do you want to receive your coffee?</label>
+        <label for="delivery1"><input name="c1" value="Home Delivered" id="delivery1" type="checkbox" class="inline"/> Home Delivered</label>
+        <label for="delivery2"><input name="c1" value="Pick Up from Cup O'Joe" id="delivery2" type="checkbox" class="inline"/> Pick Up from Cup'O Joe</label>
+        <hr>
+        <label>Any Suggestions for the Coffee Subscription Services mention here:</label>
+        <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I would like to add....."></textarea>
+        <hr>
+        <button type="submit" id="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
